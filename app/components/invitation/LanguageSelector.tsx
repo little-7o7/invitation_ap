@@ -9,6 +9,7 @@ interface LanguageSelectorProps {
     ru: string;
     en: string;
     uz: string;
+    tj: string;
   };
 }
 
@@ -24,6 +25,9 @@ export default function LanguageSelector({ t, lang, links }: LanguageSelectorPro
         </Link>
         <Link href={links.uz} className={lang === "uz" ? "active" : ""}>
           {t.langUz}
+        </Link>
+        <Link href={links.tj} className={lang === "tj" ? "active" : ""}>
+          {t.langtj}
         </Link>
       </nav>
     </div>

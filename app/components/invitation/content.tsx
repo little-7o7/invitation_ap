@@ -1,6 +1,6 @@
 import React from "react";
 
-export type Language = "ru" | "en" | "uz";
+export type Language = "ru" | "en" | "uz" | "tj";
 
 export const content = {
   ru: {
@@ -8,7 +8,8 @@ export const content = {
     prefix: "Дорогой(ая)",
     langRu: "Русский",
     langEn: "English",
-    langUz: "O'zbek",
+    langUz: "O'zбек",
+    langtj: "Тоҷикӣ",
     weddingInvitation: "Приглашение на свадьбу",
     invited: "Приглашаем Вас на нашу свадьбу",
     scrollDown: "Прокрутите вниз",
@@ -56,8 +57,81 @@ export const content = {
         словами.
         <br />
         <br />
-        Спасибо, что разделите этот важный момент с нами <br /> —<br />с вами он станет
-        еще прекраснее.
+        Спасибо, что разделите этот важный момент с нами <br /> —<br />с вами он
+        станет еще прекраснее.
+        <br />
+        <br />
+        Пусть в вашей жизни будет столько же любви, радости и чудес,
+        <br />
+        сколько вы принесете нам в этот день.
+      </>
+    ),
+    venueFull: "Самарканд, Узбекистан  ·  Ресторан Fotima Sultan",
+    rsvpTitle: "БУДЕТЕ ЛИ ВЫ С НАМИ?",
+    rsvpNameLabel: "Ваше имя",
+    rsvpYes: "Да, с удовольствием!",
+    rsvpNo: "К сожалению, не смогу",
+    rsvpReasonLabel: "Укажите причину",
+    rsvpSubmit: "Отправить",
+    rsvpSuccess: "Спасибо! Ваш ответ отправлен.",
+    rsvpError: "Произошла ошибка. Попробуйте снова.",
+  },
+  tj: {
+    guest: "Дорогой Гость",
+    prefix: "Дорогой(ая)",
+    langRu: "Русский",
+    langEn: "English",
+    langUz: "O'zбек",
+    langtj: "Тоҷикӣ",
+    weddingInvitation: "Приглашение на свадьбу",
+    invited: "Приглашаем Вас на нашу свадьбу",
+    scrollDown: "Прокрутите вниз",
+    withJoy: "С радостью и любовью",
+    specialMoment: "Настал особенный момент",
+    inviteText:
+      "Махмудхон и Диловархон, с радостью приглашаем вас разделить с нами праздник нашей свадьбы — день, сотканный из любви, смеха и тепла самых важных людей.",
+    quote: (
+      <>
+        Две души, одно сердце.
+        <br />В этот день мы скажем &quot;да&quot; совместной жизни —<br />и
+        хотим, чтобы вы были рядом с нами.
+      </>
+    ),
+    time: "ВРЕМЯ",
+    timeRemaining: "Осталось времени",
+    untilWeSay: "До того, как мы скажем 'Да'",
+    days: "Дней",
+    hours: "Часов",
+    mins: "Минут",
+    secs: "Секунд",
+    eventDetails: "Детали мероприятия",
+    saveTheDate: "Сохраните дату",
+    date: "Дата",
+    dateValue: "4 Августа",
+    dateSub: "2026 · Вторник",
+    day: "Вторник",
+    timeLabel: "Время",
+    timeValue: "19:00",
+    timeSub: "Вечер",
+    location: "Место",
+    locationSub: "Самарканд",
+    ourStory: "Наша история",
+    momentsTogether: "Моменты вместе",
+    theVenue: "Место проведения",
+    venueDesc:
+      "Расположенный в самом сердце древнего Самарканда, ресторан Fotima Sultan предлагает элегантную обстановку, где узбекское гостеприимство сочетается с изысканным современным комфортом — пространство, такое же неподвластное времени, как и любовь, которую мы празднуем.",
+    googleMaps: "Google Карты",
+    yandexMaps: "Яндекс Карты",
+    open: "Открыть",
+    ourGratitude: "Наша благодарность",
+    wishes: (
+      <>
+        Ваше присутствие наполнит наш день светом, который невозможно описать
+        словами.
+        <br />
+        <br />
+        Спасибо, что разделите этот важный момент с нами <br /> —<br />с вами он
+        станет еще прекраснее.
         <br />
         <br />
         Пусть в вашей жизни будет столько же любви, радости и чудес,
@@ -81,6 +155,7 @@ export const content = {
     langRu: "Русский",
     langEn: "English",
     langUz: "O'zbek",
+    langtj: "Тоҷикӣ",
     weddingInvitation: "Wedding Invitation",
     invited: "You are cordially invited",
     scrollDown: "Scroll down",
@@ -154,6 +229,7 @@ export const content = {
     langRu: "Русский",
     langEn: "English",
     langUz: "O'zbek",
+    langtj: "Тоҷикӣ",
     weddingInvitation: "To'y taklifnomasi",
     invited: "Sizni to'yimizga taklif etamiz",
     scrollDown: "Pastga aylantiring",
@@ -201,7 +277,8 @@ export const content = {
         Sizning tashrifingiz baxtli kunimizni yanada nurafshon etadi.
         <br />
         <br />
-        Ushbu muhim onlarni biz bilan baham ko&apos;rganingiz uchun rahmat <br />—
+        Ushbu muhim onlarni biz bilan baham ko&apos;rganingiz uchun rahmat{" "}
+        <br />—
         <br />
         siz sababli bu kun yanada go&apos;zalroq bo&apos;ladi.
         <br />

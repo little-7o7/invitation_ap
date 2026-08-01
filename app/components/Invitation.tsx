@@ -64,6 +64,7 @@ export default function Invitation({ lang, rawName }: InvitationProps) {
     ru: effectiveName ? `${prefix}/ru/${effectiveName}` : `${prefix}/ru`,
     en: effectiveName ? `${prefix}/en/${effectiveName}` : `${prefix}/en`,
     uz: effectiveName ? `${prefix}/uz/${effectiveName}` : `${prefix}/uz`,
+    tj: effectiveName ? `${prefix}/tj/${effectiveName}` : `${prefix}/tj`,
   };
 
   // Intersection Observer for scroll animations
