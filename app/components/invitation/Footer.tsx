@@ -36,8 +36,8 @@ export default function Footer({ t }: { t: Translations }) {
         <div className="ow-dot"></div>
         <div className="ow-line" style={{'maxWidth':'70px'}}></div>
       </div>
-      <div className="foot-date">04 · August · 2026</div>
-      <div className="foot-names">Maxmudxon &amp; Dilovarxon</div>
+      <div className="foot-date">15 · August · 2026</div>
+      <div className="foot-names">Akobirkhon &amp; Pokizakhon</div>
       <div className="foot-venue" style={{'marginTop':'6px'}}>{t.venueFull}</div>
       
       <div className="floral-full" style={{'marginTop':'16px'}}>

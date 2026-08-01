@@ -66,7 +66,7 @@ export const content = {
         сколько вы принесете нам в этот день.
       </>
     ),
-    venueFull: "Самарканд, Узбекистан  ·  Ресторан Fotima Sultan",
+    venueFull: "Самарканд, Узбекистан  ·  Ресторан Amir",
     rsvpTitle: "БУДЕТЕ ЛИ ВЫ С НАМИ?",
     rsvpNameLabel: "Ваше имя",
     rsvpYes: "Да, с удовольствием!",
@@ -136,7 +136,7 @@ export const content = {
         Дар ин рӯз ба мо чӣ қадар хоҳед овард.
       </>
     ),
-    venueFull: "Самарканд, Узбекистон Ресторан Фотима Султон",
+    venueFull: "Самарканд, Узбекистон Ресторан Амир",
     rsvpTitle: "Оё шумо бо мо хоҳед буд?",
     rsvpNameLabel: "Номи шумо",
     rsvpYes: "Бале, бо камоли майл!",
@@ -190,7 +190,7 @@ export const content = {
     momentsTogether: "Moments Together",
     theVenue: "The Venue",
     venueDesc:
-      "Nestled in the heart of ancient Samarkand, Fotima Sultan offers an elegant setting where Uzbek warmth meets refined modern comfort — a space as timeless as the love we celebrate.",
+      "Nestled in the heart of ancient Samarkand, Amir Restaurant offers an elegant setting where Uzbek warmth meets refined modern comfort — a space as timeless as the love we celebrate.",
     googleMaps: "Google Maps",
     yandexMaps: "Yandex Maps",
     open: "Open",
@@ -210,7 +210,7 @@ export const content = {
         as you bring to us on this day.
       </>
     ),
-    venueFull: "Samarkand, Uzbekistan  ·  Fotima Sultan Restaurant",
+    venueFull: "Samarkand, Uzbekistan  ·  Amir Restaurant",
     rsvpTitle: "WILL YOU BE WITH US?",
     rsvpNameLabel: "Your Name",
     rsvpYes: "Yes, with pleasure!",
@@ -285,7 +285,7 @@ export const content = {
         quvonch va mo&apos;jizalarga to&apos;la bo&apos;lsin.
       </>
     ),
-    venueFull: "Samarqand, O'zbekiston  ·  Fotima Sultan restorani",
+    venueFull: "Samarqand, O'zbekiston  ·  Amir restorani",
     rsvpTitle: "BIZ BILAN BO'LASIZMI?",
     rsvpNameLabel: "Ismingiz",
     rsvpYes: "Ha, bajonidil!",

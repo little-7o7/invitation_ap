@@ -154,7 +154,7 @@ export default function Gallery({ t }: { t: Translations }) {
       </div>
       <div className="gal-strip rev">
         <div className="gal-strip-line"></div>
-        <p className="gal-strip-text">Maxmudxon &amp; Dilovarxon · 2026</p>
+        <p className="gal-strip-text">Akobirkhon &amp; Pokizakhon · 2026</p>
         <div className="gal-strip-line"></div>
       </div>
       <div className="gold-stripe-bot" style={{ width: "100%" }}></div>
