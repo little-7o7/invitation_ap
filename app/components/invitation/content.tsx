@@ -87,7 +87,7 @@ export const content = {
     withJoy: "With Joy & Love",
     specialMoment: "A special moment has arrived",
     inviteText:
-      "Maxmudxon and Dilovarxon, we gladly invite you to share with us the celebration of our wedding - a day woven from love, laughter and warmth of the most important people.",
+      "Akobirkhon and Pokhizakhon, we gladly invite you to share with us the celebration of our wedding - a day woven from love, laughter and warmth of the most important people.",
     quote: (
       <>
         Two souls, one heart.
