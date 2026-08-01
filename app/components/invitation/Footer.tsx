@@ -28,7 +28,7 @@ export default function Footer({ t }: { t: Translations }) {
           <ellipse cx="540" cy="66" rx="4" ry="7" transform="rotate(-10 540 66)" fill="#c4a882" opacity=".15"/>
         </svg>
       </div>
-      <div className="foot-mono">M &amp; D</div>
+      <div className="foot-mono">A &amp; P</div>
       <div className="orn-wide" style={{'margin':'4px auto 12px'}}>
         <div className="ow-line" style={{'maxWidth':'70px'}}></div>
         <div className="ow-dot"></div>
