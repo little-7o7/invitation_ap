@@ -29,7 +29,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Maxmudxon & Dilovarxon",
+  title: "Akobirkhon & Pokizakhon",
   description: "Wedding Invitation",
   other: {
     google: "notranslate",
