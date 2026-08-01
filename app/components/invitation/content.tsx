@@ -16,7 +16,7 @@ export const content = {
     withJoy: "С радостью и любовью",
     specialMoment: "Настал особенный момент",
     inviteText:
-      "Махмудхон и Диловархон, с радостью приглашаем вас разделить с нами праздник нашей свадьбы — день, сотканный из любви, смеха и тепла самых важных людей.",
+      "Акобирхон и Покизахон, с радостью приглашаем вас разделить с нами праздник нашей свадьбы — день, сотканный из любви, смеха и тепла самых важных людей.",
     quote: (
       <>
         Две души, одно сердце.
@@ -34,9 +34,9 @@ export const content = {
     eventDetails: "Детали мероприятия",
     saveTheDate: "Сохраните дату",
     date: "Дата",
-    dateValue: "4 Августа",
-    dateSub: "2026 · Вторник",
-    day: "Вторник",
+    dateValue: "15 августа",
+    dateSub: "2026 · Суббота",
+    day: "Суббота",
     timeLabel: "Время",
     timeValue: "19:00",
     timeSub: "Вечер",
@@ -46,7 +46,7 @@ export const content = {
     momentsTogether: "Моменты вместе",
     theVenue: "Место проведения",
     venueDesc:
-      "Расположенный в самом сердце древнего Самарканда, ресторан Fotima Sultan предлагает элегантную обстановку, где узбекское гостеприимство сочетается с изысканным современным комфортом — пространство, такое же неподвластное времени, как и любовь, которую мы празднуем.",
+      "Расположенный в самом сердце древнего Самарканда, ресторан Amir предлагает элегантную обстановку, где узбекское гостеприимство сочетается с изысканным современным комфортом — пространство, такое же неподвластное времени, как и любовь, которую мы празднуем.",
     googleMaps: "Google Карты",
     yandexMaps: "Яндекс Карты",
     open: "Открыть",
@@ -89,7 +89,7 @@ export const content = {
     withJoy: "Бо шодӣ ва муҳаббат",
     specialMoment: "Лаҳзаи хосае фаро расидааст.",
     inviteText:
-      "Маҳмудхон ва Диловархон, мо шуморо бо каمالи хушнудӣ ба ҷашни арӯсии худ даъват менамоем — рӯзе, ки саршор аз муҳаббат, шодӣ ва гармии вуҷуди азизтаринҳост.",
+      "Акобирхон ва Покизахон, мо шуморо бо каمالи хушнудӣ ба ҷашни арӯсии худ даъват менамоем — рӯзе, ки саршор аз муҳаббат, шодӣ ва гармии вуҷуди азизтаринҳост.",
     quote: (
       <>
         Ду ҷон, як дил.
@@ -106,9 +106,9 @@ export const content = {
     eventDetails: "Тафсилоти чорабинӣ",
     saveTheDate: "Санаро қайд кунед",
     date: "Сана",
-    dateValue: "4-уми август",
-    dateSub: "2026 · Сешанбе",
-    day: "Сешанбе",
+    dateValue: "15-уми август",
+    dateSub: "2026 · Шанбе",
+    day: "Шанбе",
     timeLabel: "Вақт",
     timeValue: "19:00",
     timeSub: "Бегоҳ",
@@ -118,7 +118,7 @@ export const content = {
     momentsTogether: "Лаҳзаҳои якҷоя",
     theVenue: "Макон",
     venueDesc:
-      "Ресторани «Фотима Султон», ки дар маркази Самарқанди бостонӣ ҷойгир аст, муҳити зебову бошукӯҳеро пешкаш мекунад; дар ин ҷо меҳмоннавозии ӯзбекӣ бо бароҳатии муосиру нозукона омезиш ёфтааст — маконе, ки мисли ишқи мо ҷовидонӣ ва безамон аст.",
+      "Ресторани «Амир», ки дар маркази Самарқанди бостонӣ ҷойгир аст, муҳити зебову бошукӯҳеро пешкаш мекунад; дар ин ҷо меҳмоннавозии ӯзбекӣ бо бароҳатии муосиру нозукона омезиш ёфтааст — маконе, ки мисли ишқи мо ҷовидонӣ ва безамон аст.",
     googleMaps: "Google Карты",
     yandexMaps: "Яндекс Карты",
     open: "Кушодан",
@@ -159,7 +159,7 @@ export const content = {
     withJoy: "With Joy & Love",
     specialMoment: "A special moment has arrived",
     inviteText:
-      "Akobirkhon and Pokhizakhon, we gladly invite you to share with us the celebration of our wedding - a day woven from love, laughter and warmth of the most important people.",
+      "Akobirkhon and Pokizakhon, we gladly invite you to share with us the celebration of our wedding - a day woven from love, laughter and warmth of the most important people.",
     quote: (
       <>
         Two souls, one heart.
@@ -178,9 +178,9 @@ export const content = {
     eventDetails: "Event Details",
     saveTheDate: "Save the Date",
     date: "Date",
-    dateValue: "4 August",
-    dateSub: "2026 · Tuesday",
-    day: "Tuesday",
+    dateValue: "15 August",
+    dateSub: "2026 · Saturday",
+    day: "Saturday",
     timeLabel: "Time",
     timeValue: "19:00",
     timeSub: "Evening",
@@ -233,7 +233,7 @@ export const content = {
     withJoy: "Quvonch va muhabbat bilan",
     specialMoment: "Ushbu maxsus kun yetib keldi",
     inviteText:
-      "Biz — Maxmudxon va Dilovarxon siz azizlarni to‘yimiz quvonchini biz bilan baham ko‘rishga chin qalbdan taklif etamiz. Bu kun mehr, quvonch va yaqin insonlarning samimiyati bilan bezaladi.",
+      "Biz — Akobirkhon va Pokizakhon siz azizlarni to‘yimiz quvonchini biz bilan baham ko‘rishga chin qalbdan taklif etamiz. Bu kun mehr, quvonch va yaqin insonlarning samimiyati bilan bezaladi.",
     quote: (
       <>
         Ikki qalb, bitta yurak.
@@ -252,9 +252,9 @@ export const content = {
     eventDetails: "Marosim tafsilotlari",
     saveTheDate: "Kunni unutmang",
     date: "Sana",
-    dateValue: "4-Avgust",
-    dateSub: "2026 · Seshanba",
-    day: "Seshanba",
+    dateValue: "15-Avgust",
+    dateSub: "2026 · Shanba",
+    day: "Shanba",
     timeLabel: "Vaqt",
     timeValue: "19:00",
     timeSub: "Oqshom",
@@ -264,7 +264,7 @@ export const content = {
     momentsTogether: "Birgalikdagi damlar",
     theVenue: "Manzilimiz",
     venueDesc:
-      "Qadimiy Samarqandning qoq markazida joylashgan Fotima Sultan restorani sizga bejirim va qulay muhitni taqdim etadi — biz nishonlayotgan sevgi kabi vaqt o'tishiga qaram bo'lmagan makon.",
+      "Qadimiy Samarqandning qoq markazida joylashgan Amir restorani sizga bejirim va qulay muhitni taqdim etadi — biz nishonlayotgan sevgi kabi vaqt o'tishiga qaram bo'lmagan makon.",
     googleMaps: "Google xaritalar",
     yandexMaps: "Yandex xaritalar",
     open: "Ochish",

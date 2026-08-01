@@ -75,12 +75,12 @@ export default function Hero({ t, displayName }: HeroProps) {
         <div className="hl"></div>
       </div>
 
-      <span className="h-name1">Maxmudxon</span>
+      <span className="h-name1">Akobirkhon</span>
       <span className="h-amp">&</span>
-      <span className="h-name2">Dilovarxon</span>
+      <span className="h-name2">Pokizakhon</span>
 
       <div className="h-date-block">
-        <div className="h-date-big">04 August 2026</div>
+        <div className="h-date-big">15 August 2026</div>
         <div className="h-date-sub">{t.day} &nbsp;·&nbsp; 19:00 &nbsp;·&nbsp; {t.locationSub}</div>
       </div>
 

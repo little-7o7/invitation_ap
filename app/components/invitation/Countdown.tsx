@@ -7,7 +7,7 @@ export default function Countdown({ t }: { t: Translations }) {
 
   useEffect(() => {
     const tick = () => {
-      const diff = new Date('2026-08-04T19:00:00+05:00').getTime() - Date.now();
+      const diff = new Date('2026-15-04T19:00:00+05:00').getTime() - Date.now();
       if (diff <= 0) {
         setTimeLeft({ d: '00', h: '00', m: '00', s: '00' });
         return;
