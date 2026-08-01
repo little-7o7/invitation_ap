@@ -7,7 +7,7 @@ export default function Countdown({ t }: { t: Translations }) {
 
   useEffect(() => {
     const tick = () => {
-      const diff = new Date('2026-15-04T19:00:00+05:00').getTime() - Date.now();
+      const diff = new Date('2026-08-15T19:00:00+05:00').getTime() - Date.now();
       if (diff <= 0) {
         setTimeLeft({ d: '00', h: '00', m: '00', s: '00' });
         return;
@@ -46,7 +46,7 @@ export default function Countdown({ t }: { t: Translations }) {
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style={{'flexShrink':'0','marginLeft':'6px'}}><circle cx="6" cy="6" r="4.5" stroke="#c4a882" strokeWidth=".6" fill="none" opacity=".6"/><line x1="6" y1="1" x2="6" y2="11" stroke="#c4a882" strokeWidth=".5" opacity=".4"/><line x1="1" y1="6" x2="11" y2="6" stroke="#c4a882" strokeWidth=".5" opacity=".4"/></svg>
       </div>
       <div className="cd-frame rev">
-        <div className="cd-frame-label">Samarkand · 04 August 2026</div>
+        <div className="cd-frame-label">Samarkand · 15 August 2026</div>
         <div className="cd stagger">
           <div className="cd-b rev"><div className="cd-n" >{timeLeft.d}</div><div className="cd-l">{t.days}</div></div>
           <div className="cd-b rev"><div className="cd-n" >{timeLeft.h}</div><div className="cd-l">{t.hours}</div></div>
