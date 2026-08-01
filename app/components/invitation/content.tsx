@@ -1,0 +1,226 @@
+import React from "react";
+
+export type Language = "ru" | "en" | "uz";
+
+export const content = {
+  ru: {
+    guest: "Дорогой Гость",
+    prefix: "Дорогой(ая)",
+    langRu: "Русский",
+    langEn: "English",
+    langUz: "O'zbek",
+    weddingInvitation: "Приглашение на свадьбу",
+    invited: "Приглашаем Вас на нашу свадьбу",
+    scrollDown: "Прокрутите вниз",
+    withJoy: "С радостью и любовью",
+    specialMoment: "Настал особенный момент",
+    inviteText:
+      "Махмудхон и Диловархон, с радостью приглашаем вас разделить с нами праздник нашей свадьбы — день, сотканный из любви, смеха и тепла самых важных людей.",
+    quote: (
+      <>
+        Две души, одно сердце.
+        <br />В этот день мы скажем &quot;да&quot; совместной жизни —<br />и
+        хотим, чтобы вы были рядом с нами.
+      </>
+    ),
+    time: "ВРЕМЯ",
+    timeRemaining: "Осталось времени",
+    untilWeSay: "До того, как мы скажем 'Да'",
+    days: "Дней",
+    hours: "Часов",
+    mins: "Минут",
+    secs: "Секунд",
+    eventDetails: "Детали мероприятия",
+    saveTheDate: "Сохраните дату",
+    date: "Дата",
+    dateValue: "4 Августа",
+    dateSub: "2026 · Вторник",
+    day: "Вторник",
+    timeLabel: "Время",
+    timeValue: "19:00",
+    timeSub: "Вечер",
+    location: "Место",
+    locationSub: "Самарканд",
+    ourStory: "Наша история",
+    momentsTogether: "Моменты вместе",
+    theVenue: "Место проведения",
+    venueDesc:
+      "Расположенный в самом сердце древнего Самарканда, ресторан Fotima Sultan предлагает элегантную обстановку, где узбекское гостеприимство сочетается с изысканным современным комфортом — пространство, такое же неподвластное времени, как и любовь, которую мы празднуем.",
+    googleMaps: "Google Карты",
+    yandexMaps: "Яндекс Карты",
+    open: "Открыть",
+    ourGratitude: "Наша благодарность",
+    wishes: (
+      <>
+        Ваше присутствие наполнит наш день светом, который невозможно описать
+        словами.
+        <br />
+        <br />
+        Спасибо, что разделите этот важный момент с нами <br /> —<br />с вами он станет
+        еще прекраснее.
+        <br />
+        <br />
+        Пусть в вашей жизни будет столько же любви, радости и чудес,
+        <br />
+        сколько вы принесете нам в этот день.
+      </>
+    ),
+    venueFull: "Самарканд, Узбекистан  ·  Ресторан Fotima Sultan",
+    rsvpTitle: "БУДЕТЕ ЛИ ВЫ С НАМИ?",
+    rsvpNameLabel: "Ваше имя",
+    rsvpYes: "Да, с удовольствием!",
+    rsvpNo: "К сожалению, не смогу",
+    rsvpReasonLabel: "Укажите причину",
+    rsvpSubmit: "Отправить",
+    rsvpSuccess: "Спасибо! Ваш ответ отправлен.",
+    rsvpError: "Произошла ошибка. Попробуйте снова.",
+  },
+  en: {
+    guest: "Dear Guest",
+    prefix: "Dear",
+    langRu: "Русский",
+    langEn: "English",
+    langUz: "O'zbek",
+    weddingInvitation: "Wedding Invitation",
+    invited: "You are cordially invited",
+    scrollDown: "Scroll down",
+    withJoy: "With Joy & Love",
+    specialMoment: "A special moment has arrived",
+    inviteText:
+      "Maxmudxon and Dilovarxon, we gladly invite you to share with us the celebration of our wedding - a day woven from love, laughter and warmth of the most important people.",
+    quote: (
+      <>
+        Two souls, one heart.
+        <br />
+        On this day we say yes to a lifetime together —<br />
+        and we want you right here beside us.
+      </>
+    ),
+    time: "TIME",
+    timeRemaining: "Time Remaining",
+    untilWeSay: "Until We Say I Do",
+    days: "Days",
+    hours: "Hours",
+    mins: "Mins",
+    secs: "Secs",
+    eventDetails: "Event Details",
+    saveTheDate: "Save the Date",
+    date: "Date",
+    dateValue: "4 August",
+    dateSub: "2026 · Tuesday",
+    day: "Tuesday",
+    timeLabel: "Time",
+    timeValue: "19:00",
+    timeSub: "Evening",
+    location: "Location",
+    locationSub: "Samarkand",
+    ourStory: "Our Story",
+    momentsTogether: "Moments Together",
+    theVenue: "The Venue",
+    venueDesc:
+      "Nestled in the heart of ancient Samarkand, Fotima Sultan offers an elegant setting where Uzbek warmth meets refined modern comfort — a space as timeless as the love we celebrate.",
+    googleMaps: "Google Maps",
+    yandexMaps: "Yandex Maps",
+    open: "Open",
+    ourGratitude: "Our Gratitude",
+    wishes: (
+      <>
+        Your presence will fill our day with a light impossible to describe in
+        words.
+        <br />
+        <br />
+        Thank you for sharing this important moment with us <br /> —<br />
+        it will become even more beautiful because of you.
+        <br />
+        <br />
+        May your own life hold just as much love, joy, and wonder
+        <br />
+        as you bring to us on this day.
+      </>
+    ),
+    venueFull: "Samarkand, Uzbekistan  ·  Fotima Sultan Restaurant",
+    rsvpTitle: "WILL YOU BE WITH US?",
+    rsvpNameLabel: "Your Name",
+    rsvpYes: "Yes, with pleasure!",
+    rsvpNo: "Unfortunately, I can't",
+    rsvpReasonLabel: "Please state the reason",
+    rsvpSubmit: "Send",
+    rsvpSuccess: "Thank you! Your response has been sent.",
+    rsvpError: "An error occurred. Please try again.",
+  },
+  uz: {
+    guest: "Hurmatli Mehmon",
+    prefix: "Hurmatli",
+    langRu: "Русский",
+    langEn: "English",
+    langUz: "O'zbek",
+    weddingInvitation: "To'y taklifnomasi",
+    invited: "Sizni to'yimizga taklif etamiz",
+    scrollDown: "Pastga aylantiring",
+    withJoy: "Quvonch va muhabbat bilan",
+    specialMoment: "Ushbu maxsus kun yetib keldi",
+    inviteText:
+      "Biz — Maxmudxon va Dilovarxon siz azizlarni to‘yimiz quvonchini biz bilan baham ko‘rishga chin qalbdan taklif etamiz. Bu kun mehr, quvonch va yaqin insonlarning samimiyati bilan bezaladi.",
+    quote: (
+      <>
+        Ikki qalb, bitta yurak.
+        <br />
+        Ushbu kunda biz butun umrga &quot;ha&quot; deymiz —<br />
+        va bu damlarda siz biz bilan birga bo&apos;lishingizni xohlaymiz.
+      </>
+    ),
+    time: "VAQT",
+    timeRemaining: "Qolgan vaqt",
+    untilWeSay: "To'yimizgacha",
+    days: "Kun",
+    hours: "Soat",
+    mins: "Daqiqa",
+    secs: "Soniya",
+    eventDetails: "Marosim tafsilotlari",
+    saveTheDate: "Kunni unutmang",
+    date: "Sana",
+    dateValue: "4-Avgust",
+    dateSub: "2026 · Seshanba",
+    day: "Seshanba",
+    timeLabel: "Vaqt",
+    timeValue: "19:00",
+    timeSub: "Oqshom",
+    location: "Manzil",
+    locationSub: "Samarqand",
+    ourStory: "Bizning hikoyamiz",
+    momentsTogether: "Birgalikdagi damlar",
+    theVenue: "Manzilimiz",
+    venueDesc:
+      "Qadimiy Samarqandning qoq markazida joylashgan Fotima Sultan restorani sizga bejirim va qulay muhitni taqdim etadi — biz nishonlayotgan sevgi kabi vaqt o'tishiga qaram bo'lmagan makon.",
+    googleMaps: "Google xaritalar",
+    yandexMaps: "Yandex xaritalar",
+    open: "Ochish",
+    ourGratitude: "Bizning minnatdorchiligimiz",
+    wishes: (
+      <>
+        Sizning tashrifingiz baxtli kunimizni yanada nurafshon etadi.
+        <br />
+        <br />
+        Ushbu muhim onlarni biz bilan baham ko&apos;rganingiz uchun rahmat <br />—
+        <br />
+        siz sababli bu kun yanada go&apos;zalroq bo&apos;ladi.
+        <br />
+        <br />
+        Hayotingiz ham siz bizga ulashgan e&apos;tibor kabi sevgi,
+        <br />
+        quvonch va mo&apos;jizalarga to&apos;la bo&apos;lsin.
+      </>
+    ),
+    venueFull: "Samarqand, O'zbekiston  ·  Fotima Sultan restorani",
+    rsvpTitle: "BIZ BILAN BO'LASIZMI?",
+    rsvpNameLabel: "Ismingiz",
+    rsvpYes: "Ha, bajonidil!",
+    rsvpNo: "Afsuski, kela olmayman",
+    rsvpReasonLabel: "Sababini ko'rsating",
+    rsvpSubmit: "Yuborish",
+    rsvpSuccess: "Rahmat! Javobingiz yuborildi.",
+    rsvpError: "Xatolik yuz berdi. Qayta urinib ko'ring.",
+  },
+};
+
+export type Translations = typeof content.en;
