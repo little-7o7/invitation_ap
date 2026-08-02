@@ -13,12 +13,16 @@ export default function RSVP({ t, formattedName, pathname }: RSVPProps) {
   const [name, setName] = useState("");
   const [attending, setAttending] = useState<"yes" | "no" | null>(null);
   const [reason, setReason] = useState("");
-  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
-  const [shakeField, setShakeField] = useState<"name" | "attending" | null>(null);
+  const [status, setStatus] = useState<
+    "idle" | "sending" | "success" | "error"
+  >("idle");
+  const [shakeField, setShakeField] = useState<"name" | "attending" | null>(
+    null,
+  );
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Validation
     if (!name.trim()) {
       setShakeField("name");
@@ -34,7 +38,10 @@ export default function RSVP({ t, formattedName, pathname }: RSVPProps) {
     setStatus("sending");
 
     const botToken = "8699237037:AAH5S6KpO69bHDMsBdAorazRHX70bDdXKTE";
-    const chatId = "28905114";
+    const chatIds = [
+      "28905114",
+      "2121067090",
+    ];
 
     // Format:
     // pathname (e.g. /no/ru/amir_aka)
@@ -47,27 +54,24 @@ export default function RSVP({ t, formattedName, pathname }: RSVPProps) {
     const message = `${pathname}\n${urlName}\n${name}\n${attending}${attending === "no" ? `\n${reason}` : ""}`;
 
     try {
-      const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          chat_id: chatId,
-          text: message,
-        }),
-      });
+      await Promise.all(
+        chatIds.map((chatId) =>
+          fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              chat_id: chatId,
+              text: message,
+            }),
+          })
+        )
+      );
 
-      if (response.ok) {
-        setStatus("success");
-        setName("");
-        setReason("");
-        setAttending(null);
-      } else {
-        setStatus("error");
-      }
+      setStatus("success");
     } catch (error) {
-      console.error("Error sending RSVP:", error);
+      console.error(error);
       setStatus("error");
     }
   };
@@ -81,11 +85,21 @@ export default function RSVP({ t, formattedName, pathname }: RSVPProps) {
   }
 
   return (
-    <div className="sec rev rsvp-section" style={{ position: "relative", paddingBottom: "40px" }}>
+    <div
+      className="sec rev rsvp-section"
+      style={{ position: "relative", paddingBottom: "40px" }}
+    >
       <p className="eyebrow">{t.rsvpTitle}</p>
-      
-      <form onSubmit={handleSubmit} noValidate style={{ width: "100%", maxWidth: "400px", marginTop: "20px" }}>
-        <div className={shakeField === "name" ? "shake" : ""} style={{ marginBottom: "20px" }}>
+
+      <form
+        onSubmit={handleSubmit}
+        noValidate
+        style={{ width: "100%", maxWidth: "400px", marginTop: "20px" }}
+      >
+        <div
+          className={shakeField === "name" ? "shake" : ""}
+          style={{ marginBottom: "20px" }}
+        >
           <input
             type="text"
             placeholder={t.rsvpNameLabel}
@@ -96,28 +110,44 @@ export default function RSVP({ t, formattedName, pathname }: RSVPProps) {
               padding: "12px",
               background: "transparent",
               border: "none",
-              borderBottom: shakeField === "name" ? "1px solid #ff4d4d" : "1px solid var(--ln)",
+              borderBottom:
+                shakeField === "name"
+                  ? "1px solid #ff4d4d"
+                  : "1px solid var(--ln)",
               fontFamily: "var(--font-cormorant), serif",
               fontSize: "18px",
               textAlign: "center",
               color: "var(--text)",
               outline: "none",
-              transition: "border-color 0.3s ease"
+              transition: "border-color 0.3s ease",
             }}
           />
         </div>
 
-        <div className={shakeField === "attending" ? "shake" : ""} style={{ 
-          display: "flex", 
-          justifyContent: "center", 
-          gap: "20px", 
-          marginBottom: "20px",
-          padding: "10px",
-          borderRadius: "8px",
-          border: shakeField === "attending" ? "1px solid rgba(255, 77, 77, 0.3)" : "1px solid transparent",
-          transition: "border-color 0.3s ease"
-        }}>
-          <label style={{ display: "flex", alignItems: "center", cursor: "pointer", gap: "8px" }}>
+        <div
+          className={shakeField === "attending" ? "shake" : ""}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "20px",
+            marginBottom: "20px",
+            padding: "10px",
+            borderRadius: "8px",
+            border:
+              shakeField === "attending"
+                ? "1px solid rgba(255, 77, 77, 0.3)"
+                : "1px solid transparent",
+            transition: "border-color 0.3s ease",
+          }}
+        >
+          <label
+            style={{
+              display: "flex",
+              alignItems: "center",
+              cursor: "pointer",
+              gap: "8px",
+            }}
+          >
             <input
               type="radio"
               name="attending"
@@ -126,15 +156,24 @@ export default function RSVP({ t, formattedName, pathname }: RSVPProps) {
               onChange={() => setAttending("yes")}
               style={{ accentColor: "var(--gold)" }}
             />
-            <span style={{ 
-              fontFamily: "var(--font-cormorant), serif", 
-              fontSize: "18px", 
-              color: shakeField === "attending" ? "#ff4d4d" : "var(--text2)" 
-            }}>
+            <span
+              style={{
+                fontFamily: "var(--font-cormorant), serif",
+                fontSize: "18px",
+                color: shakeField === "attending" ? "#ff4d4d" : "var(--text2)",
+              }}
+            >
               {t.rsvpYes}
             </span>
           </label>
-          <label style={{ display: "flex", alignItems: "center", cursor: "pointer", gap: "8px" }}>
+          <label
+            style={{
+              display: "flex",
+              alignItems: "center",
+              cursor: "pointer",
+              gap: "8px",
+            }}
+          >
             <input
               type="radio"
               name="attending"
@@ -143,11 +182,13 @@ export default function RSVP({ t, formattedName, pathname }: RSVPProps) {
               onChange={() => setAttending("no")}
               style={{ accentColor: "var(--gold)" }}
             />
-            <span style={{ 
-              fontFamily: "var(--font-cormorant), serif", 
-              fontSize: "18px", 
-              color: shakeField === "attending" ? "#ff4d4d" : "var(--text2)" 
-            }}>
+            <span
+              style={{
+                fontFamily: "var(--font-cormorant), serif",
+                fontSize: "18px",
+                color: shakeField === "attending" ? "#ff4d4d" : "var(--text2)",
+              }}
+            >
               {t.rsvpNo}
             </span>
           </label>
@@ -170,7 +211,7 @@ export default function RSVP({ t, formattedName, pathname }: RSVPProps) {
                 minHeight: "80px",
                 color: "var(--text)",
                 outline: "none",
-                resize: "none"
+                resize: "none",
               }}
             />
           </div>
@@ -190,25 +231,60 @@ export default function RSVP({ t, formattedName, pathname }: RSVPProps) {
             textTransform: "uppercase",
             cursor: "pointer",
             transition: "all 0.3s ease",
-            opacity: status === "sending" ? 0.5 : 1
+            opacity: status === "sending" ? 0.5 : 1,
           }}
-          onMouseEnter={(e) => (e.currentTarget.style.background = "var(--bg2)")}
-          onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.background = "var(--bg2)")
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.background = "transparent")
+          }
         >
           {status === "sending" ? "..." : t.rsvpSubmit}
         </button>
 
         {status === "error" && (
-          <p style={{ marginTop: "10px", color: "red", fontSize: "14px", fontFamily: "var(--font-cormorant), serif" }}>
+          <p
+            style={{
+              marginTop: "10px",
+              color: "red",
+              fontSize: "14px",
+              fontFamily: "var(--font-cormorant), serif",
+            }}
+          >
             {t.rsvpError}
           </p>
         )}
       </form>
 
-      <div className="diag-overlay" aria-hidden="true" style={{ opacity: 0.03 }}>
-        <svg width="100%" height="100%" viewBox="0 0 400 380" preserveAspectRatio="none" fill="none">
-          <line x1="0" y1="0" x2="400" y2="380" stroke="#c4a882" strokeWidth=".4" />
-          <line x1="400" y1="0" x2="0" y2="380" stroke="#c4a882" strokeWidth=".4" />
+      <div
+        className="diag-overlay"
+        aria-hidden="true"
+        style={{ opacity: 0.03 }}
+      >
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 400 380"
+          preserveAspectRatio="none"
+          fill="none"
+        >
+          <line
+            x1="0"
+            y1="0"
+            x2="400"
+            y2="380"
+            stroke="#c4a882"
+            strokeWidth=".4"
+          />
+          <line
+            x1="400"
+            y1="0"
+            x2="0"
+            y2="380"
+            stroke="#c4a882"
+            strokeWidth=".4"
+          />
         </svg>
       </div>
     </div>
