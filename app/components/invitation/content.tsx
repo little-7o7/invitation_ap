@@ -53,17 +53,13 @@ export const content = {
     ourGratitude: "Наша благодарность",
     wishes: (
       <>
-        Ваше присутствие наполнит наш день светом, который невозможно описать
-        словами.
+        Дорогие родные и друзья!
         <br />
         <br />
-        Спасибо, что разделите этот важный момент с нами <br /> —<br />с вами он
-        станет еще прекраснее.
+        С большой радостью приглашаем Вас разделить с нами один из самых важных и счастливых дней нашей жизни — день нашей свадьбы.
         <br />
         <br />
-        Пусть в вашей жизни будет столько же любви, радости и чудес,
-        <br />
-        сколько вы принесете нам в этот день.
+        Для нас будет огромной честью видеть Вас рядом в этот особенный вечер. Пусть он станет началом прекрасных воспоминаний, наполненных улыбками, искренними пожеланиями и радостью.
       </>
     ),
     venueFull: "Самарканд, Узбекистан  ·  Ресторан Amir",
@@ -125,15 +121,13 @@ export const content = {
     ourGratitude: "Изҳори сипоси мо",
     wishes: (
       <>
-        Ҳузури шумо рӯзи моро бо нуре саршор хоҳад кард, ки онро бо сухан наметавон тавсиф намуд.
+        Хешу табор ва дӯстони азиз!
         <br />
         <br />
-        Ташаккур барои бо мо мубодила кардани ин лаҳзаи муҳим. <br /> —<br />Бо ту, он боз ҳам зеботар хоҳад шуд.
+        Бо камоли эҳтиром Шуморо ба рӯзи арӯсии худ даъват менамоем.
         <br />
         <br />
-        Бигзор ҳаёти шумо пур аз муҳаббат, шодӣ ва мӯъҷизаҳо бошад,
-        <br />
-        Дар ин рӯз ба мо чӣ қадар хоҳед овард.
+        Ҳузури Шумо дар ин рӯзи фаромӯшнашаванда барои мо боиси ифтихор ва шодии бузург хоҳад буд. Биёед ин лаҳзаҳои зеборо якҷоя ҷашн гирем.
       </>
     ),
     venueFull: "Самарканд, Узбекистон Ресторан Амир",
@@ -197,17 +191,13 @@ export const content = {
     ourGratitude: "Our Gratitude",
     wishes: (
       <>
-        Your presence will fill our day with a light impossible to describe in
-        words.
+        Dear Family and Friends,
         <br />
         <br />
-        Thank you for sharing this important moment with us <br /> —<br />
-        it will become even more beautiful because of you.
+        With great joy, we invite you to celebrate one of the most important and happiest days of our lives — our wedding day.
         <br />
         <br />
-        May your own life hold just as much love, joy, and wonder
-        <br />
-        as you bring to us on this day.
+        It would be our greatest pleasure to have you with us as we begin this new chapter together. Your presence will make our celebration truly unforgettable.
       </>
     ),
     venueFull: "Samarkand, Uzbekistan  ·  Amir Restaurant",
@@ -271,18 +261,13 @@ export const content = {
     ourGratitude: "Bizning minnatdorchiligimiz",
     wishes: (
       <>
-        Sizning tashrifingiz baxtli kunimizni yanada nurafshon etadi.
+        Aziz oila a’zolari va qadrli do’stlar!
         <br />
         <br />
-        Ushbu muhim onlarni biz bilan baham ko&apos;rganingiz uchun rahmat{" "}
+        Sizni hayotimizdagi eng quvonchli va unutilmas kun — toʻyimizga chin dildan taklif etamiz.
         <br />—
         <br />
-        siz sababli bu kun yanada go&apos;zalroq bo&apos;ladi.
-        <br />
-        <br />
-        Hayotingiz ham siz bizga ulashgan e&apos;tibor kabi sevgi,
-        <br />
-        quvonch va mo&apos;jizalarga to&apos;la bo&apos;lsin.
+        Ushbu baxtli kunimizda yonimizda bo’lishingiz biz uchun katta sharaf va quvonch bo’ladi. Keling, bu unutilmas lahzalarni birgalikda nishonlaylik.
       </>
     ),
     venueFull: "Samarqand, O'zbekiston  ·  Amir restorani",
