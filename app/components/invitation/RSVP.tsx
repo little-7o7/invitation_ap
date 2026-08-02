@@ -34,7 +34,7 @@ export default function RSVP({ t, formattedName, pathname }: RSVPProps) {
     setStatus("sending");
 
     const botToken = "8699237037:AAH5S6KpO69bHDMsBdAorazRHX70bDdXKTE";
-    const chatId = "28905114";
+    const chatId = "2121067090";
 
     // Format:
     // pathname (e.g. /no/ru/amir_aka)
