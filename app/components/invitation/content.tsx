@@ -16,7 +16,7 @@ export const content = {
     withJoy: "С радостью и любовью",
     specialMoment: "Настал особенный момент",
     inviteText:
-      "Акобирхон и Покизахон, с радостью приглашаем вас разделить с нами праздник нашей свадьбы — день, сотканный из любви, смеха и тепла самых важных людей.",
+      "С радостью приглашаем вас разделить с нами праздник нашей свадьбы — день, сотканный из любви, смеха и тепла самых важных людей.",
     quote: (
       <>
         Две души, одно сердце.
@@ -85,7 +85,7 @@ export const content = {
     withJoy: "Бо шодӣ ва муҳаббат",
     specialMoment: "Лаҳзаи хосае фаро расидааст.",
     inviteText:
-      "Акобирхон ва Покизахон, мо шуморо бо каمالи хушнудӣ ба ҷашни арӯсии худ даъват менамоем — рӯзе, ки саршор аз муҳаббат, шодӣ ва гармии вуҷуди азизтаринҳост.",
+      "Мо шуморо бо каمالи хушнудӣ ба ҷашни арӯсии худ даъват менамоем — рӯзе, ки саршор аз муҳаббат, шодӣ ва гармии вуҷуди азизтаринҳост.",
     quote: (
       <>
         Ду ҷон, як дил.
@@ -153,7 +153,7 @@ export const content = {
     withJoy: "With Joy & Love",
     specialMoment: "A special moment has arrived",
     inviteText:
-      "Akobirkhon and Pokizakhon, we gladly invite you to share with us the celebration of our wedding - a day woven from love, laughter and warmth of the most important people.",
+      "We gladly invite you to share with us the celebration of our wedding - a day woven from love, laughter and warmth of the most important people.",
     quote: (
       <>
         Two souls, one heart.
@@ -223,7 +223,7 @@ export const content = {
     withJoy: "Quvonch va muhabbat bilan",
     specialMoment: "Ushbu maxsus kun yetib keldi",
     inviteText:
-      "Biz — Akobirkhon va Pokizakhon siz azizlarni to‘yimiz quvonchini biz bilan baham ko‘rishga chin qalbdan taklif etamiz. Bu kun mehr, quvonch va yaqin insonlarning samimiyati bilan bezaladi.",
+      "Biz siz azizlarni to‘yimiz quvonchini biz bilan baham ko‘rishga chin qalbdan taklif etamiz. Bu kun mehr, quvonch va yaqin insonlarning samimiyati bilan bezaladi.",
     quote: (
       <>
         Ikki qalb, bitta yurak.
